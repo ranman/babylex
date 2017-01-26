@@ -10,4 +10,5 @@ setup(
   download_url='https://github.com/ranman/babylex/tarball/0.1',
   keywords=['aws', 'chatbot'],
   classifiers=[],
+  install_requires=["boto3"]
 )
