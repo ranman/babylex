@@ -10,7 +10,7 @@ BOT_TEMPLATE_STRING = "/bot/{}/alias/{}/user/{}/"
 REGION = 'us-east-1'
 B3_SESSION = boto3.Session()
 
-class LexSession():
+class LexSession:
     def __init__(self, bot, alias, user):
         self.url = LEX_URL + BOT_TEMPLATE_STRING.format(bot, alias, user)
         self.session = Session()
