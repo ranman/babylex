@@ -24,6 +24,7 @@ returns:
 You can work with audio as well:
 
 ```python
+from babylex import LexSession
 import pyaudio
 p = pyaudio.PyAudio()
 lex_session = LexSession("WhereIsRandall", "$LATEST", "ranman")
