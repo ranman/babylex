@@ -18,8 +18,7 @@ class LexContentSigV4Auth(SigV4Auth):
 class LexSession:
     LEX_URL = "https://runtime.lex.{}.amazonaws.com/bot/{}/alias/{}/user/{}/"
 
-    def __init__(self, bot, alias, user, creds=None, region='us-east-1',
-            profile=None):
+    def __init__(self, bot, alias, user, creds=None, region='us-east-1', profile=None):
         if not creds:
             self.creds = boto3.Session(profile_name=profile).get_credentials()
         # region can be changed to refer to boto3.Session().region_name
